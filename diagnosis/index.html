@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://ncihtan.github.io/htan-linkml/description/">
+        <link rel="canonical" href="https://ncihtan.github.io/htan-linkml/diagnosis/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: description - htan-linkml</title>
+        <title>Slot: diagnosis - htan-linkml</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-description" class="md-skip">
+        <a href="#slot-diagnosis" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: description
+              Slot: diagnosis
             
           </span>
         </div>
@@ -317,15 +317,14 @@
                 
                   
 
-  <a href="https://github.com/ncihtan/htan-linkml/edit/master/docs/description.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/ncihtan/htan-linkml/edit/master/docs/diagnosis.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-description">Slot: description</h1>
-<p><em>A human-readable description for a thing</em></p>
-<p>URI: <a href="http://schema.org/description">schema:description</a></p>
+<h1 id="slot-diagnosis">Slot: diagnosis</h1>
+<p>URI: <a href="https://w3id.org/ncihtan/htan-linkml/diagnosis">htan_linkml:diagnosis</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -343,16 +342,11 @@
 <td>Represents a Study</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../NamedThing/">NamedThing</a></td>
-<td>A generic grouping for any identifiable entity</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>Range: <a href="../Diagnosis/">Diagnosis</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -370,26 +364,24 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>schema:description</td>
+<td>htan_linkml:diagnosis</td>
 </tr>
 <tr>
 <td>native</td>
-<td>htan_linkml:description</td>
+<td>htan_linkml:diagnosis</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: description
-description: A human-readable description for a thing
+<pre><code class="language-yaml">name: diagnosis
 from_schema: https://w3id.org/ncihtan/htan-linkml
 rank: 1000
-slot_uri: schema:description
-alias: description
+alias: diagnosis
 domain_of:
-- NamedThing
-range: string
+- Study
+range: Diagnosis
 
 </code></pre>
 

@@ -219,6 +219,15 @@
 
       Study : description
 
+      Study : diagnosis
+
+
+
+
+    Study --&gt; "0..1" Diagnosis : diagnosis
+    click Diagnosis href "../Diagnosis"
+
+
       Study : id
 
       Study : name
@@ -276,6 +285,12 @@
 <td><a href="../vital_status/">vital_status</a></td>
 <td>0..1 <br/> <a href="../PersonStatus/">PersonStatus</a></td>
 <td>living or dead status</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diagnosis/">diagnosis</a></td>
+<td>0..1 <br/> <a href="../Diagnosis/">Diagnosis</a></td>
+<td></td>
 <td>direct</td>
 </tr>
 <tr>
@@ -354,6 +369,7 @@ slots:
 - birth_date
 - age_in_years
 - vital_status
+- diagnosis
 slot_usage:
   primary_email:
     name: primary_email
@@ -415,6 +431,15 @@ attributes:
     domain_of:
     - Study
     range: PersonStatus
+  diagnosis:
+    name: diagnosis
+    from_schema: https://w3id.org/ncihtan/htan-linkml
+    rank: 1000
+    alias: diagnosis
+    owner: Study
+    domain_of:
+    - Study
+    range: Diagnosis
   id:
     name: id
     description: A unique identifier for a thing
